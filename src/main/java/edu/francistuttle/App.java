@@ -20,10 +20,10 @@ public class App
     public static void main( String[] args )
     {
         try {
-            File folder = new File("C:\\Users\\cw1101046\\Desktop\\Github\\nasaparser\\src\\main\\java\\edu\\francistuttle\\nasa.xml");
+            //File feedLink = new File("C:\\Users\\cw1101046\\Desktop\\Github\\nasaparser\\src\\main\\java\\edu\\francistuttle\\nasa.xml");
             
             SyndFeedInput input = new SyndFeedInput();
-            SyndFeed feed = input.build(new XmlReader(folder));
+            SyndFeed feed = input.build(new XmlReader(feedLink));
 
             System.out.println("Feed Title: " + feed.getTitle());
             System.out.println("Feed Link: " + feed.getLink());
